@@ -2,6 +2,24 @@ package Test;
 
 public class supriti{
     public static void main(String[] args) {  // public class -
+
+        // java.lang.ArrayIndexOutOfBoundsException when your array length is less means if your length is 5 and you are trying to access 6th element of the array then compiler will be you this exception.
+        for(int l=0;l < args.length;l++ ){
+            System.out.println("Here is words ="+args[l]); // when first then it will be args[0]    , args[1]   , args[2]
+        }
+
+        try{
+            if ("supriti".equals(args[0])){
+                System.out.println("Now code will be run.");
+            }
+            else{
+                System.out.println("Something went wrong.");
+            }
+        }catch(Exception e)
+        {
+            String msg= e.getMessage();
+            System.out.println("Now code is handled."+msg);
+        }
         // This is entry point
         // jvm search this line in all over project 
         // it should be public because if it will not public then it is not accessable to the interpreter.
@@ -12,7 +30,7 @@ public class supriti{
         //  akhil ak = new akhil();
         //  akhil ak1= new akhil(5, 6);
 
-        System.out.println("Here is breakdown of---"+args[2]);
+        // System.out.println("Here is breakdown of---"+args[2]);
         int c;
         c = akhil.ballu();
         System.out.println("C Value is :------"+ c);
