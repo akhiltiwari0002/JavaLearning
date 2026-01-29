@@ -15,10 +15,15 @@ public class Calculator {
         float b = sc.nextFloat();
         System.out.println("Enter Your choice-");
 
+
+        // Variable name should be yours -- like if you will use reserved keywords of java then it is a error. for example - if,else , for , true,false,
+
+        int a1; // this is acceptable but 1a is error meanse number shuold not come first.
+
         String choice= sc.next();
         float c;
         if("sum".equals(choice)){
-            c = a+b;
+            c = a+b;  // Here + works as addition operator
             System.out.println("Sum is:-"+c);
         }
         else if("sub".equals(choice)){
@@ -32,6 +37,10 @@ public class Calculator {
         else if("divide".equals(choice)){
             c = a/b;
             System.out.println("Divison is:-     "+c);
+        }
+        else if("modulus".equals(choice)){
+            c= a%b;  // calculating remainder
+            System.out.println("Remainder is-  "+c);  // here + works as glu for the String values 
         }
         else{
              System.out.println("Unexpected Input.");
