@@ -31,6 +31,22 @@ public class Increment {
         int a = sc.nextInt();
         System.out.println("input your second value.");
         int b = sc.nextInt();
+
+
+     String s=(a > b) ? "a is greater": "b is greater";
+
+
+     int c = a>b ? 15 : 20;
+    //  String result= (condition) ?  true : false   ternary operator --- purpose to avoid if else block.  
+
+     System.out.println(s);
+
+     System.out.println(c);
+
+
+
+
+
         // System.out.println("input your third value.");
         // int c = sc.nextInt();
 
