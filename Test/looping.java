@@ -8,15 +8,17 @@ public class looping {
         Scanner sc= new Scanner(System.in);
         System.out.println("Type how much you love supriti");
         int a= sc.nextInt();
-        int i=0;
-        while(i < a){
-            System.out.println(i+"-I love you supriti");
-            if(i==69){
-                System.out.println("Do with me");
-                
+
+        for(int i =0 ;  i < a ; i++  ){   
+            for(int j=0; j < i; j++){
+            System.out.println("*");
             }
-            i++;  
-        }
+            System.out.println();
+        }  // n^2
+
+
+        // while loop first check condition then execute its block
+        // do-while loop execute at least once then check the condition and then it decide to need to run again or not.
 
         System.out.println("Please love me more");
     }
